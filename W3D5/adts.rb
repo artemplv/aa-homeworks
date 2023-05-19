@@ -17,3 +17,22 @@ class Stack
   end
 end
 
+# Exercise 2: Queue
+class Queue
+  def initialize
+    @elements = []
+  end
+
+  def enqueue(el)
+    @elements.push(el)
+  end
+
+  def dequeue
+    @elements.shift
+  end
+
+  def peek
+    @elements.first
+  end
+end
+
