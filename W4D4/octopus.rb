@@ -44,3 +44,20 @@ def clever_octopus(arr)
   longest_str
 end
 
+
+# O(n)
+tiles_array = ["up", "right-up", "right", "right-down", "down", "left-down", "left",  "left-up"]
+
+def slow_dance(target, collection)
+  collection.each_with_index do |str, i|
+    return i if str == target
+  end
+end
+
+
+# O(1)
+tiles_hash = tiles_array.each_with_index.inject({}) { |accum, (str, i)| accum[str] = i; accum }
+
+def fast_dance(target, collection)
+  collection[target]
+end
