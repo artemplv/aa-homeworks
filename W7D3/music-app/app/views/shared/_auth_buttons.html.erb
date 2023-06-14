@@ -1,0 +1,27 @@
+<% if logged_in? %>
+  <div class="auth-buttons-container">
+    <form action="<%= session_url %>" method="POST">
+      <%= auth_token %>
+
+      <input
+        type="hidden"
+        name="_method"
+        value="delete"
+      />
+
+      <input
+        type="submit"
+        value="Log Out"
+      />
+    </form>
+  </div>
+<% else %>
+  <div class="auth-buttons-container">
+    <a href="<%= new_user_url %>">
+      Sign Up
+    </a>
+    <a href="<%= new_session_url %>">
+      Log In
+    </a>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+<section>
+  <h2>
+    All Bands
+  </h2>
+
+  <ul class="bands-list">
+    <% @bands.each do |band| %>
+      <li>
+        <a href="<%= band_url(band.id) %>">
+          <%= band.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+
+   <a
+    href="<%= new_band_url %>"
+    class="button-link centered"
+  >
+    Add new
+  </a>
+
+</section>

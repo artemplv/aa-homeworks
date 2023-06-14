@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Tilt+Prism&display=swap');
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(226, 215, 215);
+ }
+
+ .main-app-title {
+    font-family: 'Tilt Prism', cursive;
+    font-size: 56px;
+    color: purple;
+    text-align: center;
+    text-decoration: underline;
+    margin: 15px 30px;
+ }
+
+ .main-link {
+  text-decoration: none;
+ }
+
+ .auth-buttons-container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    padding-right: 30px;
+    font-size: 18px;
+ }
+
+ .auth-buttons-container a, .button-link {
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: white;
+    background-color: purple;
+ }
+
+ form input {
+    margin-right: 15px;
+    border-radius: 10px;
+    border-color: purple;
+ }
+
+ input[type="submit"]:hover {
+   cursor: pointer;
+ }
+
+ .bands-list li {
+   padding: 5px 0;
+ }
+
+ .bands-list a {
+   color: purple;
+   font-size: 17px;
+   text-decoration: none;
+ }
+
+ .bands-list a:hover {
+   text-decoration: underline;
+ }
+
+ .band-title {
+   color: purple;
+   font-size: 32px;
+   text-align: center;
+ }
+
+ .centered {
+    display: block;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+ }

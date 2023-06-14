@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+  </head>
+
+  <body>
+    <a href="<%= bands_url %>" class="main-link">
+      <h1 class="main-app-title">
+        Music App
+      </h1>
+    </a>
+    
+    <%= render 'shared/auth_buttons' %>
+
+    <%= yield %>
+  </body>
+</html>
